@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="13" passed="11" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-24T00:36:58 IST" name="Suite" finished-at="2025-03-24T00:37:02 IST" duration-ms="4616">
+    <groups>
+    </groups>
+    <test started-at="2025-03-24T00:36:58 IST" name="Test" finished-at="2025-03-24T00:37:02 IST" duration-ms="4616">
+      <class name="com.api.testing.RestAssuredTest.AppTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.testing.RestAssuredTest.AppTest@402bba4f]" started-at="2025-03-24T00:36:58 IST" name="setup" finished-at="2025-03-24T00:36:58 IST" duration-ms="629" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testUserSignup()[pri:1, instance:com.api.testing.RestAssuredTest.AppTest@402bba4f]" started-at="2025-03-24T00:36:58 IST" name="testUserSignup" finished-at="2025-03-24T00:37:00 IST" duration-ms="1328" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <400>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <400>.
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+at com.api.testing.RestAssuredTest.AppTest.testUserSignup(AppTest.java:51)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUserSignup -->
+        <test-method is-config="true" signature="logTestResult(org.testng.ITestResult)[pri:0, instance:com.api.testing.RestAssuredTest.AppTest@402bba4f]" started-at="2025-03-24T00:37:00 IST" name="logTestResult" finished-at="2025-03-24T00:37:00 IST" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testUserSignup status=FAILURE method=AppTest.testUserSignup()[pri:1, instance:com.api.testing.RestAssuredTest.AppTest@402bba4f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestResult -->
+        <test-method signature="testUserLogin()[pri:2, instance:com.api.testing.RestAssuredTest.AppTest@402bba4f]" started-at="2025-03-24T00:37:00 IST" name="testUserLogin" finished-at="2025-03-24T00:37:01 IST" duration-ms="1201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUserLogin -->
+        <test-method is-config="true" signature="logTestResult(org.testng.ITestResult)[pri:0, instance:com.api.testing.RestAssuredTest.AppTest@402bba4f]" started-at="2025-03-24T00:37:01 IST" name="logTestResult" finished-at="2025-03-24T00:37:01 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testUserLogin status=SUCCESS method=AppTest.testUserLogin()[pri:2, instance:com.api.testing.RestAssuredTest.AppTest@402bba4f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestResult -->
+        <test-method signature="testCreateBook()[pri:3, instance:com.api.testing.RestAssuredTest.AppTest@402bba4f]" started-at="2025-03-24T00:37:01 IST" name="testCreateBook" finished-at="2025-03-24T00:37:01 IST" depends-on-methods="com.api.testing.RestAssuredTest.AppTest.testUserLogin" duration-ms="59" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateBook -->
+        <test-method is-config="true" signature="logTestResult(org.testng.ITestResult)[pri:0, instance:com.api.testing.RestAssuredTest.AppTest@402bba4f]" started-at="2025-03-24T00:37:01 IST" name="logTestResult" finished-at="2025-03-24T00:37:01 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCreateBook status=SUCCESS method=AppTest.testCreateBook()[pri:3, instance:com.api.testing.RestAssuredTest.AppTest@402bba4f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestResult -->
+        <test-method signature="testGetBookById()[pri:4, instance:com.api.testing.RestAssuredTest.AppTest@402bba4f]" started-at="2025-03-24T00:37:01 IST" name="testGetBookById" finished-at="2025-03-24T00:37:01 IST" depends-on-methods="com.api.testing.RestAssuredTest.AppTest.testCreateBook" duration-ms="40" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetBookById -->
+        <test-method is-config="true" signature="logTestResult(org.testng.ITestResult)[pri:0, instance:com.api.testing.RestAssuredTest.AppTest@402bba4f]" started-at="2025-03-24T00:37:01 IST" name="logTestResult" finished-at="2025-03-24T00:37:01 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testGetBookById status=SUCCESS method=AppTest.testGetBookById()[pri:4, instance:com.api.testing.RestAssuredTest.AppTest@402bba4f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestResult -->
+        <test-method signature="testDeleteBook()[pri:5, instance:com.api.testing.RestAssuredTest.AppTest@402bba4f]" started-at="2025-03-24T00:37:01 IST" name="testDeleteBook" finished-at="2025-03-24T00:37:01 IST" depends-on-methods="com.api.testing.RestAssuredTest.AppTest.testGetBookById" duration-ms="21" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteBook -->
+        <test-method is-config="true" signature="logTestResult(org.testng.ITestResult)[pri:0, instance:com.api.testing.RestAssuredTest.AppTest@402bba4f]" started-at="2025-03-24T00:37:01 IST" name="logTestResult" finished-at="2025-03-24T00:37:01 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testDeleteBook status=SUCCESS method=AppTest.testDeleteBook()[pri:5, instance:com.api.testing.RestAssuredTest.AppTest@402bba4f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestResult -->
+        <test-method signature="testInvalidLogin()[pri:6, instance:com.api.testing.RestAssuredTest.AppTest@402bba4f]" started-at="2025-03-24T00:37:01 IST" name="testInvalidLogin" finished-at="2025-03-24T00:37:01 IST" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method is-config="true" signature="logTestResult(org.testng.ITestResult)[pri:0, instance:com.api.testing.RestAssuredTest.AppTest@402bba4f]" started-at="2025-03-24T00:37:01 IST" name="logTestResult" finished-at="2025-03-24T00:37:01 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testInvalidLogin status=SUCCESS method=AppTest.testInvalidLogin()[pri:6, instance:com.api.testing.RestAssuredTest.AppTest@402bba4f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestResult -->
+        <test-method signature="testUnauthorizedAccess()[pri:7, instance:com.api.testing.RestAssuredTest.AppTest@402bba4f]" started-at="2025-03-24T00:37:01 IST" name="testUnauthorizedAccess" finished-at="2025-03-24T00:37:01 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUnauthorizedAccess -->
+        <test-method is-config="true" signature="logTestResult(org.testng.ITestResult)[pri:0, instance:com.api.testing.RestAssuredTest.AppTest@402bba4f]" started-at="2025-03-24T00:37:01 IST" name="logTestResult" finished-at="2025-03-24T00:37:01 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testUnauthorizedAccess status=SUCCESS method=AppTest.testUnauthorizedAccess()[pri:7, instance:com.api.testing.RestAssuredTest.AppTest@402bba4f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestResult -->
+        <test-method signature="testCreateMultipleBooks(java.lang.String,java.lang.String,int,java.lang.String)[pri:8, instance:com.api.testing.RestAssuredTest.AppTest@402bba4f]" started-at="2025-03-24T00:37:01 IST" name="testCreateMultipleBooks" data-provider="bookData" finished-at="2025-03-24T00:37:01 IST" duration-ms="23" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Book 4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Author 1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2001]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Summary 1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateMultipleBooks -->
+        <test-method signature="testCreateMultipleBooks(java.lang.String,java.lang.String,int,java.lang.String)[pri:8, instance:com.api.testing.RestAssuredTest.AppTest@402bba4f]" started-at="2025-03-24T00:37:01 IST" name="testCreateMultipleBooks" data-provider="bookData" finished-at="2025-03-24T00:37:01 IST" duration-ms="18" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Book 2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Author 2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2002]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Summary 2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateMultipleBooks -->
+        <test-method is-config="true" signature="logTestResult(org.testng.ITestResult)[pri:0, instance:com.api.testing.RestAssuredTest.AppTest@402bba4f]" started-at="2025-03-24T00:37:01 IST" name="logTestResult" finished-at="2025-03-24T00:37:01 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCreateMultipleBooks status=SUCCESS method=AppTest.testCreateMultipleBooks(java.lang.String,java.lang.String,int,java.lang.String)[pri:8, instance:com.api.testing.RestAssuredTest.AppTest@402bba4f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestResult -->
+        <test-method is-config="true" signature="logTestResult(org.testng.ITestResult)[pri:0, instance:com.api.testing.RestAssuredTest.AppTest@402bba4f]" started-at="2025-03-24T00:37:01 IST" name="logTestResult" finished-at="2025-03-24T00:37:01 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCreateMultipleBooks status=SUCCESS method=AppTest.testCreateMultipleBooks(java.lang.String,java.lang.String,int,java.lang.String)[pri:8, instance:com.api.testing.RestAssuredTest.AppTest@402bba4f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestResult -->
+        <test-method signature="testCreateMultipleBooks(java.lang.String,java.lang.String,int,java.lang.String)[pri:8, instance:com.api.testing.RestAssuredTest.AppTest@402bba4f]" started-at="2025-03-24T00:37:01 IST" name="testCreateMultipleBooks" data-provider="bookData" finished-at="2025-03-24T00:37:01 IST" duration-ms="19" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Book 3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Author 3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2003]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Summary 3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateMultipleBooks -->
+        <test-method is-config="true" signature="logTestResult(org.testng.ITestResult)[pri:0, instance:com.api.testing.RestAssuredTest.AppTest@402bba4f]" started-at="2025-03-24T00:37:01 IST" name="logTestResult" finished-at="2025-03-24T00:37:01 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCreateMultipleBooks status=SUCCESS method=AppTest.testCreateMultipleBooks(java.lang.String,java.lang.String,int,java.lang.String)[pri:8, instance:com.api.testing.RestAssuredTest.AppTest@402bba4f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestResult -->
+        <test-method signature="testSignupWithExistingEmail()[pri:9, instance:com.api.testing.RestAssuredTest.AppTest@402bba4f]" started-at="2025-03-24T00:37:01 IST" name="testSignupWithExistingEmail" finished-at="2025-03-24T00:37:01 IST" duration-ms="15" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <400>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <400>.
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+at com.api.testing.RestAssuredTest.AppTest.testSignupWithExistingEmail(AppTest.java:199)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignupWithExistingEmail -->
+        <test-method is-config="true" signature="logTestResult(org.testng.ITestResult)[pri:0, instance:com.api.testing.RestAssuredTest.AppTest@402bba4f]" started-at="2025-03-24T00:37:01 IST" name="logTestResult" finished-at="2025-03-24T00:37:01 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testSignupWithExistingEmail status=FAILURE method=AppTest.testSignupWithExistingEmail()[pri:9, instance:com.api.testing.RestAssuredTest.AppTest@402bba4f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestResult -->
+        <test-method signature="testLoginWithIncorrectPassword()[pri:10, instance:com.api.testing.RestAssuredTest.AppTest@402bba4f]" started-at="2025-03-24T00:37:01 IST" name="testLoginWithIncorrectPassword" finished-at="2025-03-24T00:37:01 IST" duration-ms="369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithIncorrectPassword -->
+        <test-method is-config="true" signature="logTestResult(org.testng.ITestResult)[pri:0, instance:com.api.testing.RestAssuredTest.AppTest@402bba4f]" started-at="2025-03-24T00:37:01 IST" name="logTestResult" finished-at="2025-03-24T00:37:01 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLoginWithIncorrectPassword status=SUCCESS method=AppTest.testLoginWithIncorrectPassword()[pri:10, instance:com.api.testing.RestAssuredTest.AppTest@402bba4f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestResult -->
+        <test-method signature="testGetBookWithInvalidId()[pri:11, instance:com.api.testing.RestAssuredTest.AppTest@402bba4f]" started-at="2025-03-24T00:37:01 IST" name="testGetBookWithInvalidId" finished-at="2025-03-24T00:37:01 IST" duration-ms="22" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetBookWithInvalidId -->
+        <test-method is-config="true" signature="logTestResult(org.testng.ITestResult)[pri:0, instance:com.api.testing.RestAssuredTest.AppTest@402bba4f]" started-at="2025-03-24T00:37:01 IST" name="logTestResult" finished-at="2025-03-24T00:37:01 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testGetBookWithInvalidId status=SUCCESS method=AppTest.testGetBookWithInvalidId()[pri:11, instance:com.api.testing.RestAssuredTest.AppTest@402bba4f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.api.testing.RestAssuredTest.AppTest@402bba4f]" started-at="2025-03-24T00:37:01 IST" name="tearDown" finished-at="2025-03-24T00:37:02 IST" duration-ms="738" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.api.testing.RestAssuredTest.AppTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

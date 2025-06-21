@@ -45,7 +45,7 @@ cd RestAssuredTest
 ### 3️⃣ Configure the API Base URL
 Open `src/test/resources/config.properties` and update the base URL:
 ```
-# Default environment (local or ci or dev or prod)
+# Default environment (local or ci)
 env=local
 
 # Base URLs for different environments
@@ -92,15 +92,15 @@ target/surefire-reports
 | 6️⃣  | Login with Invalid Credentials  | POST /login               | 400 ❌            |
 | 7️⃣  | Unauthorized Access to Books    | GET /books/1              | 403 ❌            |
 | 8️⃣  | Create Multiple Books (DP)      | POST /books/              | 200 ✅            |
-| 9️⃣  | Signup with Existing Email      | POST /signup              | 400 ❌            |
+| 9️⃣  | Signup with Existing Email      | POST /signup              | 200 ✅            |
 | 🔟  | Login with Incorrect Password   | POST /login               | 400 ❌            |
-| 1️⃣1️⃣ | Get Book with Invalid ID       | GET /books/999999        | 404 ❌            |
+| 1️⃣1️⃣ | Get Book with Invalid ID         | GET /books/999999         | 404 ❌            |
 +----+----------------------------------+---------------------------+-------------------+
 
 
 
 ## 📝 Running API Requests Manually
-Want to test the API outside of the framework? Use the following **Postman**:
+Want to test the API outside of the framework? Use the following **cURL commands**:
 
 ### Create a New User (Signup)
 ```sh
